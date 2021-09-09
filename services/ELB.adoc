@@ -1,0 +1,21 @@
+- ALB target groups: EC2, ECS tasks, lambda, IP addresses.
+
+- X-Forwared-For, X-Forwarded-Port, X-Forwarded-Proto
+
+- NLB has 1 static IP per AZ, support Elastic IP.
+
+- HTTPS listener
+
+- Server Name Indication (SNI) supports multiple SSL/TLS certificates for a single server, only works with newer generation load balancers.
+
+- To update an ASG, you must provide a new Launch Configuration or Launch Template.
+    * Target Tracking Scaling
+    * Simple / Step Scaling
+    * Scheduled Actions
+    * Predictive Scaling
+
+- ASG will terminate the AZ which has the most number of instances and remove the instances with the oldest version.
+
+- ASG lifecycle hooks: perform actions when/before instance is created/terminated
+
+- Launch Configuration is legacy, Launch Template is newer

@@ -1,0 +1,5 @@
+- Default credential provider chain
+    * AWS credentials at ~/.aws/credentials
+    * Instance Profile Credentials using IAM Roles
+    * Environment variables
+
