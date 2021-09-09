@@ -1,0 +1,13 @@
+- Simple routing policy
+- Weighted Routing policy
+- Latency routing policy
+- Failover routing policy
+- Geo location routing policy
+- Geoproximity routing policy
+
+image::../resources/images/geoproximity-routing-policy.png[]
+
+- Health checks can be linked to Route53 DNS queries!
+
+- Cookies must be less than 4KB.
+

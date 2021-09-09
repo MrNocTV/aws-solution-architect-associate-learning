@@ -1,0 +1,9 @@
+## Compute and Networking
+- EC2 Enhanced Networking: Elastic Network Adapter (ENA) up to 100 Gbps
+- Elastic Fabric Adapter (EFA): Improved ENA for HPC, only works for Linux
+
+## Automation and Orchestration
+- AWS Batch:
+    * AWS Batch supports multi-node parallel jobs, which enables you to run single jobs that span multiple EC2 instances
+- AWS ParallelCluster:
+    * Open source cluster management tool to deploy HPC on AWS

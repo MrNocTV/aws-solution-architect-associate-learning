@@ -1,0 +1,32 @@
+-- TEST 2 --
+============
+
+-  By default, Spot Fleets are set to maintain target capacity by launching replacement instances after Spot Instances in the fleet are terminated. You can unclude on-demand instances in Spot Fleet
+
+- You can't move data directly from Snowball into Glacier, you need to go through S3 first, and then use a lifecycle policy. So this option is correct.
+
+- AWS supports permissions boundaries for IAM entities (users or roles)
+
+- The aws:SourceIP in this condition always represents the IP of the caller of the API. 
+
+- With bucket policies, you can grant users within your AWS Account or other AWS Accounts access to your Amazon S3 resources.
+
+- You can share the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to encrypt the snapshot with any accounts that you want to be able to access the snapshot
+
+- Create an encrypted snapshot of the database, share the snapshot, and allow access to the AWS Key Management Service (AWS KMS) encryption key
+
+- If the IAM role and the bucket are in different accounts, then you need to grant Amazon S3 permissions on both the IAM role and the bucket policy. 
+
+- You can configure listener rules to route requests to different target groups based on the content of the application traffic.
+
+- Consider an organization that has built a hub-and-spoke network with AWS Transit Gateway. VPCs have been provisioned into multiple AWS accounts, perhaps to facilitate network isolation or to enable delegated network administration. When deploying distributed architectures such as this, a popular approach is to build a "shared services VPC, which provides access to services required by workloads in each of the VPCs. This might include directory services or VPC endpoints. Sharing resources from a central location instead of building them in each VPC may reduce administrative overhead and cost.
+
+- A launch template is similar to a launch configuration, in that it specifies instance configuration information. Launch Templates do support a mix of On-Demand and Spot instances, and thanks to the ASG, we get auto-scaling capabilities.
+
+- The next priority is to consider any instance with the oldest launch template unless there is an instance that uses a launch configuration. So this rules out Instance A. Next, you need to consider any instance which has the oldest launch configuration
+
+- Partition – spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions. This strategy is typically used by large distributed and replicated workloads, such as Hadoop, Cassandra, and Kafka. Therefore, this is the correct option for the given use-case.
+
+- You can only use a launch template to provision capacity across multiple instance types using both On-Demand Instances and Spot Instances to achieve the desired scale, performance, and cost (cannot with launch configuration)
+
+- identity pools aren't an authentication mechanism in themselves
