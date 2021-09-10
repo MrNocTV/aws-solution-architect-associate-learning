@@ -30,3 +30,53 @@
 - You can only use a launch template to provision capacity across multiple instance types using both On-Demand Instances and Spot Instances to achieve the desired scale, performance, and cost (cannot with launch configuration)
 
 - identity pools aren't an authentication mechanism in themselves
+
+- If a user or role has an IAM permission policy that grants access to an action that is either not allowed or explicitly denied by the applicable SCPs, the user or role can't perform that action
+
+SCPs affect all users and roles in attached accounts, including the root user
+
+SCPs do not affect service-linked role
+
+- If a spot request is persistent, then it is opened again after your Spot Instance is interrupted
+Spot blocks are designed not to be interrupted
+When you cancel an active spot request, it does not terminate the associated instance
+
+- Delete the existing standard queue and recreate it as a FIFO queue
+Make sure that the name of the FIFO queue ends with the .fifo suffix
+Make sure that the throughput for the target FIFO queue does not exceed 3,000 messages per second
+Dedicated instances cannot be used for existing server-bound software licenses.
+-  Amazon Kinesis Data Streams stores data for up to 365 days
+
+- You cannot create a CNAME record for example.com, but you can create CNAME records for www.example.com, newproduct.example.com, and so on.
+
+- If you have multiple AWS Site-to-Site VPN connections, you can provide secure communication between sites using the AWS VPN CloudHub
+
+- Dedicated instances cannot be used for existing server-bound software licenses.
+
+- To coordinate Availability Zones across accounts, you must use the AZ ID, which is a unique and consistent identifier for an Availability Zone. For example, usw2-az2 is an AZ ID for the us-west-2 region and it has the same location in every AWS account.
+
+- NAT instance can be used as a bastion server
+Security Groups can be associated with a NAT instance
+NAT instance supports port forwarding
+
+- AWS DataSync is an online data transfer service that simplifies, automates, and accelerates copying large amounts of data to and from AWS storage services over the internet or AWS Direct Connect.
+
+- AWS Database Migration Service helps you migrate databases to AWS quickly and securely. The source database remains fully operational during the migration, minimizing downtime to applications that rely on the database. With AWS Database Migration Service, you can continuously replicate your data with high availability and consolidate databases into a petabyte-scale data warehouse by streaming data to Amazon Redshift and Amazon S3.
+
+- Amazon Aurora Serverless is an on-demand, auto-scaling configuration for Amazon Aurora
+
+- If you set the Launch Configuration Tenancy to default and the VPC Tenancy is set to dedicated, then the instances have dedicated tenancy. If you set the Launch Configuration Tenancy to dedicated and the VPC Tenancy is set to default, then again the instances have dedicated tenancy.
+
+- Use message timers to postpone the delivery of certain messages to the queue by one minute
+
+- VPC with a single public subnet 
+- VPC with public and private subnets (NAT)
+- VPC with public and private subnets and AWS Site-to-Site VPN access
+- VPC with a private subnet only and AWS Site-to-Site VPN access 
+
+- With Global Accelerator, you are provided two global static customer-facing IPs to simplify traffic management
+- If you have objects that are smaller than 1GB or if the data set is less than 1GB in size, you should consider using Amazon CloudFront's PUT/POST commands for optimal performance. The given use case has data larger than 1GB and hence S3 Transfer Acceleration is a better option.
+
+- The recover action is supported only on instances that have EBS volumes configured on them
+- You cannot use CloudWatch events to directly trigger the recovery of the EC2 instance.
+
